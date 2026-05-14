@@ -1,0 +1,7 @@
+# Vercel 배포 제외 파일 및 폴더
+dist-electron/
+node_modules/
+.next/
+.git/
+.vercel/
+*.command

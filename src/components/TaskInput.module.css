@@ -1,0 +1,370 @@
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  transition: var(--transition);
+  border: 1px solid var(--card-border);
+}
+
+.container:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  color: var(--muted);
+}
+
+.input {
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+
+.input::placeholder {
+  color: var(--muted);
+}
+
+.metaWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1.75rem;
+}
+
+.projectSelect {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  color: var(--muted);
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+}
+
+.select {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+}
+
+.select option {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.manageBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+}
+
+.manageBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--primary);
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Modal Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 90%;
+  max-width: 450px;
+  background: #121214;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  animation: modalIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.95) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.closeBtn {
+  color: var(--muted);
+}
+
+.closeBtn:hover {
+  color: var(--foreground);
+}
+
+.sectionTitle {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.addSection {
+  margin-bottom: 2rem;
+}
+
+.addForm {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.modalInput {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--card-border);
+  color: var(--foreground);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.colorPickerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.colorWheelLabel {
+  cursor: pointer;
+  display: block;
+}
+
+.hiddenColorInput {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.colorWheel {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #e53935 0deg 45deg,
+    #fb8c00 45deg 90deg,
+    #fdd835 90deg 135deg,
+    #7cb342 135deg 180deg,
+    #00897b 180deg 225deg,
+    #1e88e5 225deg 270deg,
+    #5e35b1 270deg 315deg,
+    #8e24aa 315deg 360deg
+  );
+  transition: transform 0.2s ease;
+}
+
+.colorWheel:hover {
+  transform: scale(1.05);
+}
+
+.modalAddBtn {
+  background: var(--primary);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.projectItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.projectItem:hover {
+  border-color: var(--card-border);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.projInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.colorDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.projNameText {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.delProjBtn {
+  color: var(--muted);
+  opacity: 0.3;
+}
+
+.projectItem:hover .delProjBtn {
+  opacity: 1;
+}
+
+.editForm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.miniInput {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--primary);
+  color: var(--foreground);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.colorPickerMini {
+  cursor: pointer;
+  display: block;
+}
+
+.colorDotLarge {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.saveEditBtn {
+  background: var(--primary);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionBtns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.editBtn {
+  color: var(--muted);
+  opacity: 0.3;
+  transition: var(--transition);
+}
+
+.projectItem:hover .editBtn {
+  opacity: 1;
+}
+
+.editBtn:hover {
+  color: var(--primary);
+}
+
+.delProjBtn:hover {
+  color: #ef4444;
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

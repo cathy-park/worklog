@@ -1,0 +1,131 @@
+.card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+  gap: 1.25rem;
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+}
+
+.card:hover {
+  background: var(--card-hover);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateX(4px);
+}
+
+.completed {
+  opacity: 0.7;
+}
+
+.checkBtn {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkBtn:hover .circleIcon {
+  color: var(--primary);
+}
+
+.checkedIcon {
+  color: var(--success);
+  filter: drop-shadow(0 0 8px var(--success-glow));
+}
+
+.circleIcon {
+  color: var(--muted);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.projectTag {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  width: fit-content;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.isEditing {
+  border-color: var(--primary) !important;
+  background: rgba(59, 130, 246, 0.05) !important;
+}
+
+.editInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  color: var(--foreground);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  outline: none;
+}
+
+.editBtn {
+  color: var(--muted);
+  opacity: 0;
+  padding: 0.4rem;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.card:hover .editBtn {
+  opacity: 1;
+}
+
+.editBtn:hover {
+  color: var(--primary);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.deleteBtn {
+  color: var(--muted);
+  opacity: 0;
+  padding: 0.4rem;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.card:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn:hover {
+  color: #ef4444;
+}

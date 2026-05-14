@@ -1,0 +1,490 @@
+{
+  "tasks": [
+    {
+      "id": "fe50p4nfs",
+      "title": "UXUI 범용 지식md 개발",
+      "project_id": "c0yt1zf1p",
+      "project_name": "챗봇",
+      "project_color": "#643bf7",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-09T04:47:15.000",
+      "completed_at": "2026-05-09T18:27:21.000"
+    },
+    {
+      "id": "amjhaaikf",
+      "title": "홈택스 경정청구 확인",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "todo",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-09T03:22:08.000"
+    },
+    {
+      "id": "ckv2u403x",
+      "title": "우리저축은행 햇살론 이자납입내역 서류 신청",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "todo",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-11T03:21:34.000"
+    },
+    {
+      "id": "g4nlktwn6",
+      "title": "신이 있는 교실#10 브런치 업로드",
+      "project_id": "jxrd3e41t",
+      "project_name": "글쓰기",
+      "project_color": "#ffae00",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-08T14:35:25.000",
+      "completed_at": "2026-05-08T14:35:26.000"
+    },
+    {
+      "id": "poaf310ez",
+      "title": "콜로소 미팅 준비 및 커리큘럼 정리",
+      "project_id": "e6gvbv96v",
+      "project_name": "강의",
+      "project_color": "#90f73b",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-07T14:33:44.000",
+      "completed_at": "2026-05-08T14:33:46.000"
+    },
+    {
+      "id": "ukari4zls",
+      "title": "킴매트 호스팅&도메인 연장",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-06T22:49:23.000",
+      "completed_at": "2026-05-06T22:49:25.000"
+    },
+    {
+      "id": "j81nhtqw7",
+      "title": "고용센터 방문(실업급여 신청)",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "todo",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-11T22:34:00.000"
+    },
+    {
+      "id": "x35g09tx3",
+      "title": "연세바른정형외과 (허리통증)",
+      "project_id": "30oa0q76i",
+      "project_name": "개인일정",
+      "project_color": "#3b82f6",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-05T21:54:10.000",
+      "completed_at": "2026-05-06T21:54:11.000"
+    },
+    {
+      "id": "tgnsof1e8",
+      "title": "알리 환불신청",
+      "project_id": "30oa0q76i",
+      "project_name": "개인일정",
+      "project_color": "#3b82f6",
+      "status": "todo",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-08T21:54:00.000"
+    },
+    {
+      "id": "bf0t0krjr",
+      "title": "콜로소 미팅 3시",
+      "project_id": "e6gvbv96v",
+      "project_name": "강의",
+      "project_color": "#90f73b",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-08T21:53:54.000",
+      "completed_at": "2026-05-08T15:48:22.000"
+    },
+    {
+      "id": "zak93amu0",
+      "title": "천안시청 프로그램 테스트",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-06T21:53:25.000",
+      "completed_at": "2026-05-06T21:53:26.000"
+    },
+    {
+      "id": "hc2i2ryvt",
+      "title": "고용24 구직신청",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-06T21:53:07.000",
+      "completed_at": "2026-05-06T21:53:28.000"
+    },
+    {
+      "id": "4ehccszjp",
+      "title": "내배캠 세금계산서 발급",
+      "project_id": "e6gvbv96v",
+      "project_name": "강의",
+      "project_color": "#90f73b",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-06T21:53:00.000",
+      "completed_at": "2026-05-06T21:53:29.000"
+    },
+    {
+      "id": "v30z00sl4",
+      "title": "패캠 이너써클 미팅",
+      "project_id": "e6gvbv96v",
+      "project_name": "강의",
+      "project_color": "#90f73b",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-06T21:52:52.000",
+      "completed_at": "2026-05-06T21:53:29.000"
+    },
+    {
+      "id": "a3cn3s9d3",
+      "title": "천안시청 견적서 발송",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-06T21:52:43.000",
+      "completed_at": "2026-05-06T21:53:30.000"
+    },
+    {
+      "id": "0pr6zd81k",
+      "title": "바디 인사이트 AI 디벨롭",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-02T15:39:47.000",
+      "completed_at": "2026-05-02T18:16:11.000"
+    },
+    {
+      "id": "datz4u17d",
+      "title": "Body Insight AI 개발 시작",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-29T22:04:51.000",
+      "completed_at": "2026-04-30T00:25:58.000"
+    },
+    {
+      "id": "9qsagu4rr",
+      "title": "제주도 여행",
+      "project_id": "30oa0q76i",
+      "project_name": "개인일정",
+      "project_color": "#3b82f6",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-01T21:16:25.000",
+      "completed_at": "2026-05-02T15:39:31.000"
+    },
+    {
+      "id": "yehjclbp6",
+      "title": "국민연금(기준금액낮추기)신청",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "todo",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-01T21:14:55.000"
+    },
+    {
+      "id": "4p2cwg23q",
+      "title": "건보(임의계속가입)신청",
+      "project_id": "6mcqw4kh2",
+      "project_name": "똑디",
+      "project_color": "#ffea00",
+      "status": "todo",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-05-01T21:14:34.000"
+    },
+    {
+      "id": "loekd5asx",
+      "title": "Figma에서 추출한 MD파일 설명까지 추가된 완성본으로 만들어주는 챗봇 개발",
+      "project_id": "c0yt1zf1p",
+      "project_name": "챗봇",
+      "project_color": "#643bf7",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-28T21:05:12.000",
+      "completed_at": "2026-04-29T21:05:13.000"
+    },
+    {
+      "id": "38fjgxfv8",
+      "title": "천안시청 문서 자동 서식화 테스트",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-29T21:00:54.000",
+      "completed_at": "2026-04-29T21:00:55.000"
+    },
+    {
+      "id": "mdfyt3zd1",
+      "title": "콜로소 회신",
+      "project_id": "e6gvbv96v",
+      "project_name": "강의",
+      "project_color": "#90f73b",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-28T21:00:28.000",
+      "completed_at": "2026-04-29T21:00:29.000"
+    },
+    {
+      "id": "6ogs9bx8m",
+      "title": "피그마 플러그인 제작(피그마파일 md파일 변환하기)",
+      "project_id": "nlprj67x2",
+      "project_name": "피그마",
+      "project_color": "#f73be7",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-26T20:56:02.000",
+      "completed_at": "2026-04-29T20:56:05.000"
+    },
+    {
+      "id": "sjo58px4y",
+      "title": "피그마 플러그인 제작(디자인시스템 md파일 변환하기)",
+      "project_id": "nlprj67x2",
+      "project_name": "피그마",
+      "project_color": "#f73be7",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-25T12:05:35.000Z",
+      "completed_at": "2026-04-29T20:55:36.000"
+    },
+    {
+      "id": "vtbzvszm5",
+      "title": "브런치(신이 있는 교실#8)",
+      "project_id": "jxrd3e41t",
+      "project_name": "글쓰기",
+      "project_color": "#ffae00",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-24T03:46:43.000Z",
+      "completed_at": "2026-04-24T18:46:44.885Z"
+    },
+    {
+      "id": "avobiomjd",
+      "title": "브런치(인간을 더 알아야 하는 시대에, 나는 왜 소설을 쓰는가)",
+      "project_id": "jxrd3e41t",
+      "project_name": "글쓰기",
+      "project_color": "#ffae00",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-25T03:45:23.000Z",
+      "completed_at": "2026-04-24T18:45:25.565Z"
+    },
+    {
+      "id": "m45y1z6iy",
+      "title": "AI 로고 디자이너 로디 챗봇 디벨롭",
+      "project_id": "c0yt1zf1p",
+      "project_name": "챗봇",
+      "project_color": "#643bf7",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-24T15:25:00.000Z",
+      "completed_at": "2026-04-24T06:25:02.197Z"
+    },
+    {
+      "id": "qr73y2fpm",
+      "title": "토크독 데스크탑용으로 재개발",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-24T13:31:29.000Z",
+      "completed_at": "2026-04-24T04:31:37.963Z"
+    },
+    {
+      "id": "vmyu8nu1x",
+      "title": "워크로드(캘린더,통계)",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-24T13:31:21.000Z",
+      "completed_at": "2026-04-24T04:31:37.113Z"
+    },
+    {
+      "id": "vgnbbxndw",
+      "title": "워크로드(대시보드)",
+      "project_id": "3",
+      "project_name": "바이브코딩",
+      "project_color": "#10b981",
+      "status": "completed",
+      "priority": "medium",
+      "tags": [],
+      "created_at": "2026-04-23T13:29:49.000Z",
+      "completed_at": "2026-04-24T04:31:33.596Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "3",
+      "name": "바이브코딩",
+      "color": "#10b981"
+    },
+    {
+      "id": "30oa0q76i",
+      "name": "개인일정",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "c0yt1zf1p",
+      "name": "챗봇",
+      "color": "#643bf7"
+    },
+    {
+      "id": "jxrd3e41t",
+      "name": "글쓰기",
+      "color": "#ffae00"
+    },
+    {
+      "id": "nlprj67x2",
+      "name": "피그마",
+      "color": "#f73be7"
+    },
+    {
+      "id": "e6gvbv96v",
+      "name": "강의",
+      "color": "#90f73b"
+    },
+    {
+      "id": "6mcqw4kh2",
+      "name": "똑디",
+      "color": "#ffea00"
+    }
+  ],
+  "userName": "야니",
+  "aiDetailsMap": {
+    "2026-04-23": {
+      "vgnbbxndw": [
+        "**워크로드 데이터 정리 및 분석:** ID, 프로젝트명, 팀원 명 등 기본 정보를 입력하고, 필요한 시각화 요소(예: 시간, 비용, 인력) 추가",
+        "**대시보드 구축:**  데이터 분석 결과를 바탕으로 워크로드의 진행 상황을 간결하게 표현",
+        "**실시간 데이터 업데이트:** 프로젝트 진행 상황 변화에 따라 대시보드 정보 자동 업데이트"
+      ]
+    },
+    "2026-04-24": {
+      "m45y1z6iy": [
+        "AI 로고 디자이너 로디 챗봇 디벨롭 프로젝트 진행, 프롬프트 수정",
+        "로디 챗봇 모델링 및 테스트, UX 플로우 개선"
+      ],
+      "qr73y2fpm": [
+        "토크독 데스크탑용 재개발 시스템 구축, 개발 환경 최적화 및 성능 향상.",
+        "회의 요약 로직 수정에 집중"
+      ],
+      "vmyu8nu1x": [
+        "워크로드(캘린더, 통계) 데이터 분석 및 시각화, 프로젝트 진행 상황 파악.",
+        "워크로드 데이터 기반 최적화 및 자동화 시스템 구축, 효율성 증대."
+      ]
+    },
+    "2026-04-25": {
+      "sjo58px4y": [
+        "피그마 플러그인 디자인 시스템 MD 파일 변환 완료 및 데이터셋 준비",
+        "피그마 플러그인 UI/UX 디자인 완성, 테스트 및 버전 관리"
+      ],
+      "avobiomjd": [
+        "인간을 더 알아야 하는 시대에 소설 쓰는 이유를 분석하고 논리적 근거 제시",
+        "소설 글쓰기 프로세스 개선 방안 모색 및 실제 적용 계획 수립"
+      ]
+    },
+    "2026-04-29": {
+      "datz4u17d": [
+        "바이브코딩 프로젝트 시작, Body Insight AI 개발 진행.",
+        "데이터셋 준비 및 모델 학습 위한 기초 작업 완료.",
+        "AI 모델 평가 및 개선을 위한 시뮬레이션 수행."
+      ],
+      "38fjgxfv8": [
+        "천안시청 문서 자동 서식화 테스트 진행, 정확도 및 효율성 검증.",
+        "이메일로 견적 회신. (계약 안할듯 😂)"
+      ]
+    },
+    "2026-04-26": {
+      "6ogs9bx8m": [
+        "피그마 파일 MD파일 변환 코드 작성 및 테스트 완료.",
+        "MD파일 형식 변환 결과를 피그마 플러그인에 적용.",
+        "피그마 플러그인 버전 업데이트 후, 테스트 환경에서 실행."
+      ]
+    },
+    "2026-05-06": {
+      "ukari4zls": [
+        "킴매트 호스팅 & 도메인 연장",
+        "548,680원"
+      ],
+      "zak93amu0": [
+        "천안시청 프로그램 테스트 개발"
+      ],
+      "hc2i2ryvt": [
+        "구직신청 및 강의 수강 완료",
+        "실업급여 관련 작업"
+      ],
+      "4ehccszjp": [
+        "내배캠 세금계산서 발급 완료",
+        "3,190,000원"
+      ],
+      "v30z00sl4": [
+        "패캠 이너써클 미팅 진행 및 의견 수렴.",
+        "목요일까지 회신 주기로 함"
+      ],
+      "a3cn3s9d3": [
+        "천안시청 견적서 발송 완료",
+        "8,220,600원 (30일)"
+      ]
+    },
+    "2026-05-07": {
+      "poaf310ez": [
+        "미팅때 논의할 내용 정리",
+        "**강의 내용과 목표를 명확히 정의**하고, **커리큘럼 작성** 및 **미팅 주제별 분류**."
+      ]
+    }
+  }
+}
