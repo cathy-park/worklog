@@ -72,6 +72,7 @@ ${taskList}
     }
 
     // 2. Fallback to Gemini if Ollama failed
+    let lastGeminiError = '';
     if (!usedOllama && apiKey) {
       console.log('Calling Gemini API (Fallback)...')
       
@@ -108,15 +109,21 @@ ${taskList}
               success = true
               console.log(`Successfully connected using Gemini model: ${modelName} via ${version}`)
               break
-            } else if (res.status !== 404) {
-              // 404가 아닌 다른 오류(예: 401, 429)면 해당 모델은 가망이 없으므로 다음 모델로
-              break
+            } else {
+              const errorText = await res.text()
+              lastGeminiError = `Status: ${res.status}, Body: ${errorText.substring(0, 150)}`
+              console.error(`Gemini Error (${modelName} ${version}):`, lastGeminiError)
+              if (res.status !== 404) {
+                // 404가 아닌 다른 오류(예: 401, 429)면 해당 모델은 가망이 없으므로 다음 모델로
+                break
+              }
             }
           }
           
           if (success) break
-        } catch (err) {
+        } catch (err: any) {
           console.error(`Error calling Gemini ${modelName}:`, err)
+          lastGeminiError = err?.message || String(err)
         }
       }
 
@@ -132,7 +139,7 @@ ${taskList}
         if (!apiKey) {
           throw new Error('Vercel 환경변수에 GEMINI_API_KEY가 등록되지 않았거나 적용되지 않았습니다. (Redeploy 필요)')
         } else {
-          throw new Error('Gemini API 키가 설정되어 있으나 응답을 받지 못했습니다. 키가 유효한지 확인해주세요.')
+          throw new Error(`Gemini API 키가 설정되어 있으나 응답을 받지 못했습니다. 상세 사유: ${lastGeminiError}`)
         }
       }
       throw new Error('AI 응답을 생성할 수 없습니다. Ollama 서버가 실행 중인지 또는 Gemini API 키가 유효한지 확인해주세요.')
