@@ -128,6 +128,13 @@ ${taskList}
 
     // 3. Final Error Check
     if (!rawResponse) {
+      if (!usedOllama) {
+        if (!apiKey) {
+          throw new Error('Vercel 환경변수에 GEMINI_API_KEY가 등록되지 않았거나 적용되지 않았습니다. (Redeploy 필요)')
+        } else {
+          throw new Error('Gemini API 키가 설정되어 있으나 응답을 받지 못했습니다. 키가 유효한지 확인해주세요.')
+        }
+      }
       throw new Error('AI 응답을 생성할 수 없습니다. Ollama 서버가 실행 중인지 또는 Gemini API 키가 유효한지 확인해주세요.')
     }
 
