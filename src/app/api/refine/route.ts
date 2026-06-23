@@ -36,7 +36,7 @@ ${taskList}
 ...
 `
 
-    const ollamaBaseUrl = process.env.OLLAMA_URL || 'http://localhost:11434'
+    const ollamaBaseUrl = process.env.OLLAMA_URL || 'http://127.0.0.1:11434'
     const apiKey = process.env.GEMINI_API_KEY
     
     let rawResponse = ''
