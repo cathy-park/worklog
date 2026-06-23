@@ -53,47 +53,40 @@ export function TaskProvider({ children }: { children: React.ReactNode }) {
   const [isMounted, setIsMounted] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
-  // Load data from File API on mount
+  // Load data from localStorage on mount
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        setIsLoading(true)
-        const res = await fetch('/api/storage')
-        if (res.ok) {
-          const data = await res.json()
-          if (data.tasks) setTasks(data.tasks)
-          if (data.projects) setProjects(data.projects)
-          if (data.userName) setUserName(data.userName)
-          if (data.aiDetailsMap) setAiDetailsMap(data.aiDetailsMap)
-        }
-      } catch (err) {
-        console.error('Failed to load data from file:', err)
-      } finally {
-        setIsMounted(true)
-        setIsLoading(false)
+    try {
+      setIsLoading(true)
+      const savedData = localStorage.getItem('worklog_data')
+      if (savedData) {
+        const data = JSON.parse(savedData)
+        if (data.tasks) setTasks(data.tasks)
+        if (data.projects) setProjects(data.projects)
+        if (data.userName) setUserName(data.userName)
+        if (data.aiDetailsMap) setAiDetailsMap(data.aiDetailsMap)
       }
+    } catch (err) {
+      console.error('Failed to load data from localStorage:', err)
+    } finally {
+      setIsMounted(true)
+      setIsLoading(false)
     }
-    loadData()
   }, [])
 
-  // Save data to File API whenever state changes (with debounce)
+  // Save data to localStorage whenever state changes (with debounce)
   useEffect(() => {
     if (!isMounted) return
 
-    const saveData = async () => {
+    const saveData = () => {
       try {
-        await fetch('/api/storage', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            tasks,
-            projects,
-            userName,
-            aiDetailsMap
-          })
-        })
+        localStorage.setItem('worklog_data', JSON.stringify({
+          tasks,
+          projects,
+          userName,
+          aiDetailsMap
+        }))
       } catch (err) {
-        console.error('Failed to save data to file:', err)
+        console.error('Failed to save data to localStorage:', err)
       }
     }
 
